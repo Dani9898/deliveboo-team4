@@ -135,7 +135,7 @@ class ChartController extends Controller
         -> join('dish_order', 'orders.id', '=', 'dish_order.order_id') 
         -> join('dishes', 'dish_order.dish_id', '=', 'dishes.id') 
         -> where('dishes.user_id', $user -> id)
-        -> wherebetween('orders.date', [date("2019-01-01"), date("2018-12-31")]) 
+        -> wherebetween('orders.date', [date("2019-01-01"), date("2019-12-31")]) 
         -> get();
 
         $orders2020 = DB::table('orders') 

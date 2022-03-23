@@ -1,6 +1,9 @@
 
 <template>
   <div class="container" id="check-out">
+
+    <a class="arrow-back" href="javascript:history.back()"><i class="fas fa-arrow-circle-left"></i></a>
+    
     <customer-form-component
       @getDishesId="getDishesId"
       @showForm="showForm"
@@ -26,10 +29,9 @@
                 X {{ dish.quantity }}
                 
               </span>
-
               <div class="active chart-info">
                 <i class="fas fa-plus" @click="addToCart(dish)"></i>
-                <i class="far fa-trash-alt" @click="removeFromCart(dish)"></i>
+                <i class="fas fa-minus" @click="removeFromCart(dish)"></i>
               </div>
             </li>
           </ul>

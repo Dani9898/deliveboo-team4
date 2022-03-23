@@ -2,6 +2,11 @@
 <template>
      <div class="login-register" >
 
+
+        
+         
+         
+
          <p v-if="showForm" class="text-order">Inserisci i tuoi dati per procedere al pagamento dell'ordine</p>
          <form
          v-if="showForm"
@@ -44,7 +49,6 @@
             <input type="submit" value="Procedi al pagamento" class="blocktonone login-button">
             <input type="submit" value="Paga" class="nonetoblock login-button">
          </form>
-
     </div>
 
 </template>

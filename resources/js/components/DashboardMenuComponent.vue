@@ -13,9 +13,9 @@
                 <li class="mycard row m-0">
                     <div class="container-card col-sm-10">
                         <div class="dish-img">
-                            <img src="https://picsum.photos/200/200" alt="">
-                            <!-- <img v-if="dish.dishes_img" :src="'/storage/dishes/' + dish.dishes_img" width="100px">
-                            <p v-else>image</p> -->
+                            <!-- <img src="https://picsum.photos/200/200" alt=""> -->
+                            <img v-if="dish.dishes_img" :src="'/storage/dishes/' + dish.dishes_img" width="200px">
+                            <p v-else>image</p>
                         </div>
                         <div class="card-body">
                             <div class="card-content">

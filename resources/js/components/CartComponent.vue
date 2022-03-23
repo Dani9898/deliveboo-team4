@@ -13,7 +13,7 @@
           
           <div @click="removeFromCart(dish)" class="active">
             <span class="chart-info">{{ dish.price }}€</span>
-            <i class="far fa-trash-alt"></i>
+            <i class="fas fa-minus"></i>
           </div>
           <!-- <button @click="removeFromCart(dish)" class="btn btn-danger active">
           delete

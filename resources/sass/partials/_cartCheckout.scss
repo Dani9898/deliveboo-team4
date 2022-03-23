@@ -31,11 +31,11 @@
             margin-right: 10px
         }
     }
-    .fa-trash-alt, .fa-plus{
+    .fa-trash-alt, .fa-plus, .fa-minus{
         cursor: pointer;
         margin-left: 20px;
     }
-    .fa-trash-alt{
+    .fa-minus{
         color: hsl(var(--clr-red));
     }
 
@@ -46,6 +46,17 @@
     .transition-result{
         text-align: center;
         margin-bottom: 25px;
+    }
+
+    .arrow-back {
+        position: absolute;
+        top: 105px;
+        left: 5%;
+
+        i {
+            color: hsl(var(--clr-primary));
+            font-size: 30px;
+        }
     }
 
     @media screen and (max-width: 768px) {
